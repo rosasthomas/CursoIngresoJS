@@ -27,11 +27,13 @@ function Circulo ()
 }
 function Materiales () 
 {
-	var largo,ancho,resultado;
+	var largo,ancho,cal,cemento,superficie
     largo = document.getElementById("Largo").value;
     ancho = document.getElementById("Ancho").value;
     largo = parseInt(largo);
     ancho = parseInt(ancho);
-
-
+    superficie = largo * ancho;
+    cemento = superficie * 2;
+    cal = superficie * 3;
+    alert("Se necesitan " + cemento + " bolsas de cemento y " + cal + " bolsas de cal");
 }

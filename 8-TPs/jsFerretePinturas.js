@@ -18,7 +18,7 @@ function CentigradosFahrenheit ()
 	var temperatura, resultado;
     temperatura = document.getElementById("Temperatura").value;
     temperatura = parseInt(temperatura);
-     resultado = temperatura;
+    resultado = temperatura;
     resultado = temperatura; 
     resultado = temperatura;
     alert(temperatura + " centígrados son " + resultado + " Fahrenheit");
