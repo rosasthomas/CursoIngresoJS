@@ -6,11 +6,11 @@ function sumar()
     var numerouno;
     var numerodos;
     var resultado;
-    numerouno = document.getElementById("numeroUno").value
-    numerodos = document.getElementById("numeroDos").value
-    numerouno = parseInt(numerouno)
-    numerodos = parseInt(numerodos)
-    resultado = numerouno + numerodos
-    alert("La suma es " + resultado)
+    numerouno = document.getElementById("numeroUno").value;
+    numerodos = document.getElementById("numeroDos").value;
+    numerouno = parseInt(numerouno);
+    numerodos = parseInt(numerodos);
+    resultado = numerouno + numerodos;
+    alert("La suma es " + resultado);
 }
 
