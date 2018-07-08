@@ -14,7 +14,7 @@ function Rectangulo ()
     resultado = largo + ancho;
     resultado = resultado * 2;
     resultado = resultado * 3;
-    alert("Se necesitan " + resultado + "metros de alambre");
+    alert("Se necesitan " + resultado + " metros de alambre");
 }
 function Circulo () 
 {
