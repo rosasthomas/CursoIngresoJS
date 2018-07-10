@@ -7,7 +7,6 @@ function mostrar(){
     if(estadoCivil == "Soltero" && edad > 17){
         alert("Es soltero y no es menor")
     }
-    console.log(edad,estadoCivil);
 }  
 
 //FIN DE LA FUNCIÓN
