@@ -15,6 +15,7 @@ function CalcularPrecio ()
     precio = 35;
     cantidad = document.getElementById("Cantidad").value;
     precioTotal = precio * cantidad;
+    document.getElementById("precioDescuento").value = precioTotal;
     if(cantidad > 5){
         precioDescuento = precioTotal * 0.50;
         precioDescuento = precioTotal - precioDescuento;
@@ -46,21 +47,16 @@ function CalcularPrecio ()
                              precioDescuento = precioTotal * 0.10;
                              precioDescuento = precioTotal - precioDescuento;
                              document.getElementById("precioDescuento").value = precioDescuento;
-                             }else if(cantidad == 3 && (marca != "ArgentinaLuz" && marca != "FelipeLamparas"))
-                             precioTotal = precio * 3;
-                             precioDescuento = precioTotal * 0.05;
-                             precioDescuento = precioTotal - precioDescuento;
-                             document.getElementById("precioDescuento").value = precioDescuento;
-                             }
-                         }
-                     }
-                }
-            }
+                             }else if(cantidad == 3 && (marca != "ArgentinaLuz" && marca != "FelipeLamparas")){
+                                precioTotal = precio * 3;
+                                precioDescuento = precioTotal * 0.05;
+                                precioDescuento = precioTotal - precioDescuento;
+                                document.getElementById("precioDescuento").value = precioDescuento;
+                             }              
+    if(precioDescuento > 119){
+        impuesto = precioDescuento * 0.10;
+        precioDescuento = precioDescuento * 1.10;
+        document.getElementById("precioDescuento").value = precioDescuento;
+        alert("Usted pago " + impuesto + " de IIBB.");
         }
-            if(precioDescuento > 119){
-                                 impuesto = precioDescuento * 0.10;
-                                 precioDescuento = precioDescuento * 1.10;
-                                 document.getElementById("precioDescuento").value = precioDescuento;
-                                 alert("Usted pago " + impuesto + " de IIBB.");
-                             }
-    }
+}
