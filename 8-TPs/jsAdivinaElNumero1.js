@@ -16,22 +16,29 @@ function comenzar()
 	 
 		//alert(numeroSecreto );
   numeroSecreto = parseInt(Math.random() * (100 - 1) + 1);
-  console.log(numeroSecreto)
+  console.log(numeroSecreto);
 }
 
 function verificar()
 {
   var numero,aproximado;
   numero = document.getElementById("numero").value;
-  contadorIntentos = contadorIntentos + 1;
+   contadorIntentos += 1
   document.getElementById("intentos").value = contadorIntentos;
 	if(numero == numeroSecreto){
     alert("Usted es un ganador!! y en solo " + contadorIntentos + " intentos.");
+    numeroSecreto = parseInt(Math.random() * (100 - 1) + 1);
+    console.log(numeroSecreto);
+    contadorIntentos = 0;
   }else if(numero > numeroSecreto){
     aproximado = numero - numeroSecreto;
     alert("Se pasó " + aproximado + " del número");
+    numeroSecreto = parseInt(Math.random() * (100 - 1) + 1);
+    console.log(numeroSecreto);
   }else{
     aproximado = numeroSecreto - numero;
     alert("Le faltó " + aproximado + " para llegar número");
+    numeroSecreto = parseInt(Math.random() * (100 - 1) + 1);
+    console.log(numeroSecreto);
   }
 }
