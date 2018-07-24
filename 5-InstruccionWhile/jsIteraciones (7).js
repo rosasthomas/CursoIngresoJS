@@ -1,25 +1,20 @@
 function mostrar()
 {
-	var contador = 0;
+var contador = 0;
 	var acumulador = 0;
 	var respuesta = "si";
 	var numero;
 while(true){
-	
 	numero = prompt("Ingrese un número y para terminar ingrese si");
-
 	if(numero == "si"){
 		break;
 	}
 	contador++;
 	numero = parseInt(numero);
 	acumulador+= numero;
-
 }
-
 document.getElementById('suma').value = acumulador;
 document.getElementById('promedio').value = acumulador/contador;
-
 }
 
 /* FIN DE LA FUNCIÓN
@@ -36,7 +31,9 @@ while(respuesta == "si"){
 	numero = prompt("Ingrese un número");
 	numero = parseInt(numero);
 	acumulador+= numero;
-	respuesta = prompt(¿Quiere continuar?)
+	respuesta = prompt("¿Quiere continuar?");
 }
+document.getElementById('suma').value = acumulador;
+document.getElementById('promedio').value = acumulador/contador;
 */
 
