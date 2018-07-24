@@ -5,13 +5,16 @@ function mostrar()
 	var respuesta = "si";
 	var numero;
 while(true){
-	contador++;
+	
 	numero = prompt("Ingrese un número y para terminar ingrese si");
+
+	if(numero == "si"){
+		break;
+	}
+	contador++;
 	numero = parseInt(numero);
 	acumulador+= numero;
-	if(respuesta == "si"){
 
-	}break
 }
 
 document.getElementById('suma').value = acumulador;
