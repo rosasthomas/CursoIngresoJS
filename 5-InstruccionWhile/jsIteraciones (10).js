@@ -66,5 +66,11 @@ if(diferencia > 0){
 }
 document.write("La suma de los números negativos es: " + sumaNegativos + "<br>");
 document.write("La suma de los números positivos es: " + sumaPositivos + "<br>");
-
+document.write("La cantidad de números positivos es: " + contarPositivos + "<br>");
+document.write("La cantidad de numeros negativos es: " + contarNegativos + "<br>");
+document.write("La cantidad de numeros pares es: " + contarPar + "<br>");
+document.write("La cantidad de ceros es: " + contarCero + "<br>");
+document.write("El promedio de números positivos es: " + promedioPositivos + "<br>");
+document.write("El promedio de números negativos es: " + promedioNegativos + "<br>");
+document.write("la diferencia entre la cantidad de números positivos y negativos es: " + diferencia + "<br>");
 }//FIN DE LA FUNCIÓN
