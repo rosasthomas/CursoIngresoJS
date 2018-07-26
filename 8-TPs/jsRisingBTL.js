@@ -72,7 +72,7 @@ while(estadoCivil){
  sueldoBruto = prompt("Ingrese su sueldo bruto.");
  while(sueldoBruto){
  if(sueldoBruto > 7999){
-     document.getElementById("SueldoBruto").value = sueldoBruto;
+     document.getElementById("Sueldo").value = sueldoBruto;
      break;
  }else{
      sueldoBruto = prompt("Error: Ingrese su sueldo bruto.");
@@ -83,10 +83,31 @@ while(estadoCivil){
  legajo = prompt("Ingrese su número de legajo.");
  while(legajo){
  if(legajo > 999 && legajo < 10000){
-     document.getElementById("SueldoBruto").value = sueldoBruto;
+     document.getElementById("Legajo").value = legajo;
      break;
  }else{
-     sueldoBruto = prompt("Error: Ingrese su sueldo bruto.");
+     legajo = prompt("Error: Ingrese su número de legajo.");
  }
  }
+ // Numero de legajo
+
+ nacionalidad = prompt("Ingrese su nacionalidad A- Para Argentino E- Para extranjero N- Para nacionalizado.");
+ while(nacionalidad){
+    switch(nacionalidad){
+        case "A":
+                document.getElementById("Nacionalidad").value = "Argentino";
+        break;
+        case "E":
+                document.getElementById("Nacionalidad").value = "Extranjero";
+        break;
+        case "N":
+                document.getElementById("Nacionalidad").value = "Nacionalizado";
+        break;
+        default:
+                nacionalidad = prompt("Error: Ingrese su nacionalidad.");
+    }
+    if(nacionalidad == A || estadoCivil == E || estadoCivil == N){
+        break;
+    }
+}
 }
