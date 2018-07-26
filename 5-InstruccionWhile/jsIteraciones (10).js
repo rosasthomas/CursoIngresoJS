@@ -33,17 +33,17 @@ function mostrar()
 		if(numero > 0){
 			positivos = numero;
 			contarPositivos++;
+			sumaPositivos+= positivos;	
+			
 		}else if(numero < 0){
 			negativos = numero;
 			contarNegativos++;
+			sumaNegativos+= negativos;
+			
 		}else if(numero == 0){
 			contarCero++;
 		}
-//Separar positivos de negativos y contarlos
-
-	sumaNegativos+= negativos;
-	sumaPositivos+= positivos;	
-//Suma positivos y negativos
+//Separar positivos de negativos, contarlos y Suma positivos y negativos
 
 if(numero % 2 == 0 && numero != 0){
 	contarPar++;
@@ -72,5 +72,6 @@ document.write("La cantidad de numeros pares es: " + contarPar + "<br>");
 document.write("La cantidad de ceros es: " + contarCero + "<br>");
 document.write("El promedio de números positivos es: " + promedioPositivos + "<br>");
 document.write("El promedio de números negativos es: " + promedioNegativos + "<br>");
-document.write("la diferencia entre la cantidad de números positivos y negativos es: " + diferencia + "<br>");
+//document.write("la diferencia entre la cantidad de números positivos y negativos es: " + diferencia + "<br>");
+document.write(msg);
 }//FIN DE LA FUNCIÓN
