@@ -9,5 +9,84 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
- 
+ var edad;
+ var sexo;
+ var estadoCivil;
+ var sueldoBruto;
+ var legajo;
+ var nacionalidad;
+
+ edad = prompt("Ingrese su edad.");
+ while(edad){
+ if(edad > 17 && edad < 91){
+     document.getElementById("Edad").value = edad;
+     break;
+ }else{
+     edad = prompt("Error: Ingrese su edad.");
+ }
+ }
+// Edad
+
+sexo = prompt("Ingrese su sexo (F ó M)")
+while(sexo){
+switch(sexo){
+    case "F":
+            document.getElementById("Sexo").value = sexo;
+    break;
+    case "M":
+            document.getElementById("Sexo").value = sexo;
+    break;
+    default:
+             sexo = prompt("Error: Ingrese su sexo (F ó M)");
+}
+if(sexo == "F" || sexo == "M"){
+    break;
+}
+}
+//Sexo
+
+estadoCivil = prompt("Ingrese su estado civil 1- Para soltero, 2- Para casados, 3- Para divorciados y 4- Para viudos");
+while(estadoCivil){
+    switch(estadoCivil){
+        case "1":
+                document.getElementById("EstadoCivil").value = "Soltero";
+        break;
+        case "2":
+                document.getElementById("EstadoCivil").value = "Casado";
+        break;
+        case "3":
+                document.getElementById("EstadoCivil").value = "Divorciado";
+        break;
+        case "4":
+                document.getElementById("EstadoCivil").value = "Viudo";
+        break;
+        default:
+                estadoCivil = prompt("Error: Ingrese su estado civil 1- Para soltero, 2- Para casados, 3- Para divorciados y 4- Para viudos");
+    }
+    if(estadoCivil == 1 || estadoCivil == 2 || estadoCivil == 3 || estadoCivil == 4){
+        break;
+    }
+}
+//Estado civil
+
+ sueldoBruto = prompt("Ingrese su sueldo bruto.");
+ while(sueldoBruto){
+ if(sueldoBruto > 7999){
+     document.getElementById("SueldoBruto").value = sueldoBruto;
+     break;
+ }else{
+     sueldoBruto = prompt("Error: Ingrese su sueldo bruto.");
+ }
+ }
+ // Sueldo bruto
+
+ legajo = prompt("Ingrese su número de legajo.");
+ while(legajo){
+ if(legajo > 999 && legajo < 10000){
+     document.getElementById("SueldoBruto").value = sueldoBruto;
+     break;
+ }else{
+     sueldoBruto = prompt("Error: Ingrese su sueldo bruto.");
+ }
+ }
 }
