@@ -4,7 +4,7 @@ function mostrar()
     var contPar = 0;
     numero = prompt("Ingrese su numero");
     numero = parseInt(numero);
-    for(var i = 0; i < numero; i++){
+    for(var i = 1; i <= numero; i++){
         if(i % 2 == 0){
             alert(i);
             contPar++;
