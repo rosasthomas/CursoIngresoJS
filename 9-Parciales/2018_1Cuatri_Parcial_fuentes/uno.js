@@ -66,6 +66,7 @@ function mostrar()
             max = edad;
             nombreViejo = nombre;
             sexoViejo = sexo;
+            nombreMujerVieja = nombre;
         }
 
         sumaEdad+= edad;
@@ -92,5 +93,5 @@ document.write("El promedio de edad total es: " + promedioEdad + "<br>");
 document.write("El nombre del más viejo es: " + nombreViejo + "<br>");
 document.write("El nombre del más joven es: " + nombreJoven + "<br>");
 document.write("El sexo del más viejo es: " + sexoViejo + "<br>");
-document.write("El nombre de la mujer más viejo es: " + nombreMujerVieja + "<br>");
+document.write("El nombre de la mujer más vieja es: " + nombreMujerVieja + "<br>");
 }
