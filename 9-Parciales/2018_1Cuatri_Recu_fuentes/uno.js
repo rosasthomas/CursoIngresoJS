@@ -1,6 +1,7 @@
 
 function mostrar()
-{   var base,altura,superficie,perimetro;
+{   
+    var base,altura,superficie,perimetro;
     base = prompt("Base");
     altura = prompt("Altura");
     base = parseInt(base);
