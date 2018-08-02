@@ -28,4 +28,9 @@ function mostrar()
         contTempPar++;
     }
  }
+ document.write("La cantidad de temperaturas pares es: " + contTempPar);
+ document.write("La cantidad de temperaturas pares es: " + contTempPar);
+ document.write("La cantidad de temperaturas pares es: " + contTempPar);
+ document.write("La cantidad de temperaturas pares es: " + contTempPar);
+ document.write("La cantidad de temperaturas pares es: " + contTempPar);
 }
