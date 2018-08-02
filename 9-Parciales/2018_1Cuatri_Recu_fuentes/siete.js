@@ -12,6 +12,7 @@ function mostrar()
     var sexoJoven;
     var notaJoven;
     for(var i = 0; i < 5; i++){
+
         nota = prompt("Ingrese nota");
         nota = parseInt(nota);
         while(nota < 0 || nota > 10 || isNaN(nota)){
@@ -21,7 +22,7 @@ function mostrar()
         edad = prompt("ingrese edad");
         edad = parseInt(edad);
 
-        sexo = pro("ingrese sexo");
+        sexo = prompt("ingrese sexo");
         sexo = sexo.toLowerCase()
         while(sexo != "f" && sexo != "m"){
             sexo = prompt("error: ingrese sexo");
@@ -38,7 +39,7 @@ function mostrar()
             sexoJoven = sexo;
             notaJoven = nota;
         }
-        
+
     } // fin for
     promNotas = sumaNotas / 5;
 
