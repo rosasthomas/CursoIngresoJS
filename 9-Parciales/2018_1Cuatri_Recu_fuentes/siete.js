@@ -11,6 +11,7 @@ function mostrar()
     var minEdad = 1000;
     var sexoJoven;
     var notaJoven;
+    var banderaMujer = false;
     for(var i = 0; i < 5; i++){
 
         nota = prompt("Ingrese nota");
@@ -39,7 +40,9 @@ function mostrar()
             sexoJoven = sexo;
             notaJoven = nota;
         }
-
+        if(sexo == "f"){
+        banderaMujer = true;
+        }
     } // fin for
     promNotas = sumaNotas / 5;
 
